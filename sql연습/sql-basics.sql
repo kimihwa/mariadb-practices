@@ -37,6 +37,13 @@ select *
 	from pet;
     
 -- update: DML(U)
-update pet
-	set name = 'sungtanee'
-where name = '성탄이';
+UPDATE pet 
+SET 
+    name = 'sungtanee'
+WHERE 
+    name = '성탄이';
+
+-- delete: DML(D)
+delete 
+	from pet
+where name = 'sungtanee';
