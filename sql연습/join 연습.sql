@@ -57,13 +57,8 @@ select a.emp_no, a.first_name, b.dept_name
 where a.emp_no = c.emp_no
   and b.dept_no = c.dept_no
   and c.to_date = '9999-01-01';
-  
+
 -- 실습문제 2
--- 현재, 지급되고 있는 급여를 출력해보세요
--- 사번, 이름, 급여 순으로 출력
-
-
--- 실습문제 3
 -- 현재, 직책별 평균 연봉과 직원 수를 구하되 직원 수가 100명 이상인 직책만 출력하세요 
 select b.title, avg(a.salary), count(*) 
 	from salaries a, titles b
@@ -73,7 +68,7 @@ where a.emp_no = b.emp_no
 group by b.title
 having count(*) >= 100;
 
--- 실습문제 4
+-- 실습문제 3
 -- 현재, 부서별로 직책인 Engineer인 직원들에 대해서만 평균 급여를 구하세요 
 -- 부서 이름, 평균 급여 순으로 출력 평균 급여가 높은 순으로 출력  
 select a.dept_name, avg(d.salary)
