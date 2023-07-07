@@ -52,6 +52,12 @@ desc member;
   select @@autocommit;
   set autocommit = 0;
   
+   insert
+	into member
+  values (null, 'rlaqu12@naver.com', password('123'), '김이화', '개발팀', null);
+  
+  commit;
+  
   -- select
   select *
 	from member;
