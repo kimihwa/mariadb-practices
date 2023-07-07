@@ -48,6 +48,10 @@ desc member;
 	from member
    where no=2;
    
+  -- transaction
+  select @@autocommit;
+  set autocommit = 0;
+  
   -- select
   select *
 	from member;
