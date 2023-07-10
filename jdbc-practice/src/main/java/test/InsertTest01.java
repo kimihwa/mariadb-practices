@@ -31,13 +31,13 @@ public class InsertTest01 {
 			stmt = conn.createStatement();
 
 			// 4. SQL 실행
-			String sql = "insert into dept values(null, '" + deptName +"')";
+			String sql = "insert into dept values(null, '" + deptName + "')";
 
 			int count = stmt.executeUpdate(sql);
 
 			// 5. 결과 처리
 			result = count == 1;
-//			 if(count == 1) { result = true; }
+//			if(count == 1) { result = true; }
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패:" + e);
